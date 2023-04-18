@@ -17,7 +17,7 @@ parser = argparse.ArgumentParser(description='PyTorch ImageNet Example',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--train-dir', default=os.path.expanduser('~/imagenetmini-1000/imagenet-mini/train'),
                     help='path to training data')
-parser.add_argument('--val-dir', default=os.path.expanduser('~/imagenetmini-1000/imagenet-mini/validation'),
+parser.add_argument('--val-dir', default=os.path.expanduser('~/imagenetmini-1000/imagenet-mini/val'),
                     help='path to validation data')
 parser.add_argument('--log-dir', default='./logs',
                     help='tensorboard log directory')

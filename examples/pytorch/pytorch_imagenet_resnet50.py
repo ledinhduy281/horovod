@@ -15,9 +15,9 @@ from tqdm import tqdm
 # Training settings
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Example',
                                  formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument('--train-dir', default=os.path.expanduser('~/imagenetmini-1000/imagenet-mini/train'),
+parser.add_argument('--train-dir', default=os.path.expanduser('/kaggle/input/imagenetmini-1000/imagenet-mini'),
                     help='path to training data')
-parser.add_argument('--val-dir', default=os.path.expanduser('~/imagenetmini-1000/imagenet-mini/val'),
+parser.add_argument('--val-dir', default=os.path.expanduser('/kaggle/input/imagenetmini-1000/imagenet-mini'),
                     help='path to validation data')
 parser.add_argument('--log-dir', default='./logs',
                     help='tensorboard log directory')

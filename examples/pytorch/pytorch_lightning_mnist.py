@@ -196,8 +196,7 @@ if __name__ == '__main__':
 
         callbacks = [MyDummyCallback(), ModelCheckpoint(dirpath=ckpt_path)]
 
-        trainer = Trainer(accelerator='horovod',
-                          gpus=(1 if args.cuda else 0),
+        trainer = Trainer(devices=2, accelerator="auto", training_types = "horovod",
                           callbacks=callbacks,
                           max_epochs=epochs,
                           limit_train_batches=train_percent,

@@ -97,6 +97,8 @@ def main():
     mnist_model.fit(dataset, steps_per_epoch=500 // hvd.size(), callbacks=callbacks, epochs=24, verbose=verbose)
 
 
+#add comment
+
 if __name__ == '__main__':
     if len(sys.argv) == 4:
         # run training through horovod.run

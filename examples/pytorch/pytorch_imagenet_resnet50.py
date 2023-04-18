@@ -39,7 +39,7 @@ parser.add_argument('--batch-size', type=int, default=32,
                     help='input batch size for training')
 parser.add_argument('--val-batch-size', type=int, default=32,
                     help='input batch size for validation')
-parser.add_argument('--epochs', type=int, default=90,
+parser.add_argument('--epochs', type=int, default=12,
                     help='number of epochs to train')
 parser.add_argument('--base-lr', type=float, default=0.0125,
                     help='learning rate for a single GPU')

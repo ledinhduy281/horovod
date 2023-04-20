@@ -196,7 +196,7 @@ if __name__ == '__main__':
 
         callbacks = [MyDummyCallback(), ModelCheckpoint(dirpath=ckpt_path)]
 
-        trainer = Trainer(devices=2, accelerator="auto", training_types = "horovod",
+        trainer = Trainer(devices=2, accelerator="auto",
                           callbacks=callbacks,
                           max_epochs=epochs,
                           limit_train_batches=train_percent,
